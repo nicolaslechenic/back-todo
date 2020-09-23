@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class TodoList extends Model
 {
-  protected $fillable = [];
+  protected $fillable = ["description"];
   protected $hidden = [];
 }
