@@ -22,3 +22,4 @@ $router->get('/greetings', function () use ($router) {
 });
 
 $router->get("/todos", "TodoListController@index");
+$router->post("/todos", "TodoListController@create");

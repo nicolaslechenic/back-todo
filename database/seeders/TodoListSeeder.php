@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class TodoListSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call('TodoListSeeder');
+        DB::table('todo_lists')->insert([
+            'description' => "Un autre test de todo..."
+        ]);
     }
 }
